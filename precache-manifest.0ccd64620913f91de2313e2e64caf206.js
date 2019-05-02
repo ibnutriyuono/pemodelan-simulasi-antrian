@@ -1,10 +1,10 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "b52d2a352ccafbc265eacf2b850cb9d7",
+    "revision": "336c0bd13b095aeb97010806c6ace9cd",
     "url": "/pemodelan-simulasi-antrian/index.html"
   },
   {
-    "revision": "03aa93a797c4e15dc47e",
+    "revision": "d4adca30529f11ff5686",
     "url": "/pemodelan-simulasi-antrian/static/css/main.77141b34.chunk.css"
   },
   {
@@ -12,8 +12,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/pemodelan-simulasi-antrian/static/js/2.9324fdd6.chunk.js"
   },
   {
-    "revision": "03aa93a797c4e15dc47e",
-    "url": "/pemodelan-simulasi-antrian/static/js/main.c42e57aa.chunk.js"
+    "revision": "d4adca30529f11ff5686",
+    "url": "/pemodelan-simulasi-antrian/static/js/main.f36f77e7.chunk.js"
   },
   {
     "revision": "103fa91a042b8d26e174",
