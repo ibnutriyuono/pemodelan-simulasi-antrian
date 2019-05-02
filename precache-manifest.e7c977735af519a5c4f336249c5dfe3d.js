@@ -1,6 +1,6 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "336c0bd13b095aeb97010806c6ace9cd",
+    "revision": "4769534016e9f0e057964b06a7e1472d",
     "url": "/pemodelan-simulasi-antrian/index.html"
   },
   {
