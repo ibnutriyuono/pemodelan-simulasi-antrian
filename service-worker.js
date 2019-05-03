@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/4.3.0/workbox-sw.js");
 
 importScripts(
-  "/pemodelan-simulasi-antrian/precache-manifest.e7c977735af519a5c4f336249c5dfe3d.js"
+  "/pemodelan-simulasi-antrian/precache-manifest.774e871c97f629933e49271e12023846.js"
 );
 
 self.addEventListener('message', (event) => {
