@@ -24,5 +24,9 @@ https://ibnutriyuono.github.io/pemodelan-simulasi-antrian/
 ## Authors
 
 * **Muhamad Ibnu Tri Yuono** - *Initial work* - [ibnutriyuono](https://github.com/ibnutriyuono)
+* **Rafli Rachmawandi** - *Initial work* - [raflirach](https://github.com/raflirach)
+* **Mohammad Rizki Ramadhan** - *Initial work* - [rizkirama46](https://github.com/rizkirama46)
 
 See also the list of [contributors](https://github.com/ibnutriyuono/pemodelan-simulasi-antrian/contributors) who participated in this project.
+
+See also the list of [task](https://github.com/ibnutriyuono/pemodelan-simulasi-antrian/projects) in this project.

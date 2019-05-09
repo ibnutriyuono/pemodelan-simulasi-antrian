@@ -1,4 +1,4 @@
-import React, { Component } from "react";
+import React, { Component } from 'react';
 
 class DataTujuanAntar extends Component {
   constructor(props) {
@@ -38,48 +38,48 @@ class DataTujuanAntar extends Component {
   };
 
   penentuanJalan = bilAcak => {
-    let jalan = "";
+    let jalan = '';
     let durasi = 0;
     for (let i = 0; i < 25; i++) {
       if (bilAcak[i] == 1) {
-        jalan = "Jl. Nursijan";
+        jalan = 'Jl. Nursijan';
         durasi = 10;
       } else if (bilAcak[i] == 2) {
-        jalan = "Jl. Bapa Supi";
+        jalan = 'Jl. Bapa Supi';
         durasi = 10;
       } else if (bilAcak[i] == 3) {
-        jalan = "Jl. Wangsareja";
+        jalan = 'Jl. Wangsareja';
         durasi = 5;
       } else if (bilAcak[i] == 4) {
-        jalan = "Jl. Paledang";
+        jalan = 'Jl. Paledang';
         durasi = 5;
       } else if (bilAcak[i] == 5) {
-        jalan = "Jl. Lengkong Besar";
+        jalan = 'Jl. Lengkong Besar';
         durasi = 15;
       } else if (bilAcak[i] == 6) {
-        jalan = "Jl. Lengkong Kecil";
+        jalan = 'Jl. Lengkong Kecil';
         durasi = 10;
       } else if (bilAcak[i] == 7) {
-        jalan = "Jl. Cikawao";
+        jalan = 'Jl. Cikawao';
         durasi = 10;
       } else if (bilAcak[i] == 8) {
-        jalan = "Jl. Karapitan";
+        jalan = 'Jl. Karapitan';
         durasi = 10;
       } else if (bilAcak[i] == 9) {
-        jalan = "Jl. Emong";
+        jalan = 'Jl. Emong';
         durasi = 10;
       } else if (bilAcak[i] == 10) {
-        jalan = "Jl. Jati";
+        jalan = 'Jl. Jati';
         durasi = 10;
       }
       let list = Array.from(this.state.jalan);
       this.state.jalan.push(jalan);
       this.setState({ list });
-      localStorage.setItem("I" + (i + 1).toString(), JSON.stringify(jalan));
+      localStorage.setItem('I' + (i + 1).toString(), JSON.stringify(jalan));
       let list2 = Array.from(this.state.waktu);
       this.state.waktu.push(durasi);
       this.setState({ list2 });
-      localStorage.setItem("J" + (i + 1).toString(), durasi);
+      localStorage.setItem('J' + (i + 1).toString(), durasi);
     }
   };
 
@@ -95,10 +95,7 @@ class DataTujuanAntar extends Component {
         <h6 align="left">
           <b>>> Tabel Variabel Tujuan Antar</b>
         </h6>
-        <p>
-          Menggunakan deret bilangan acak yang dibangkitkan dengan metode
-          Multiplicative Generator dengan asumsi:
-        </p>
+        <p>Menggunakan deret bilangan acak yang dibangkitkan dengan metode Multiplicative Generator dengan asumsi:</p>
         <ul>
           <li>Konstanta Pengali : 6132</li>
           <li>Konstanta Modulus : 6102</li>
