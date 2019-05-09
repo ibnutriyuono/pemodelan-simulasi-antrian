@@ -1,15 +1,17 @@
 {
   "files": {
-    "main.css": "/pemodelan-simulasi-antrian/static/css/main.77141b34.chunk.css",
-    "main.js": "/pemodelan-simulasi-antrian/static/js/main.85e10e7c.chunk.js",
-    "main.js.map": "/pemodelan-simulasi-antrian/static/js/main.85e10e7c.chunk.js.map",
+    "main.css": "/pemodelan-simulasi-antrian/static/css/main.627fbecc.chunk.css",
+    "main.js": "/pemodelan-simulasi-antrian/static/js/main.e74066ca.chunk.js",
+    "main.js.map": "/pemodelan-simulasi-antrian/static/js/main.e74066ca.chunk.js.map",
     "runtime~main.js": "/pemodelan-simulasi-antrian/static/js/runtime~main.7ba04269.js",
     "runtime~main.js.map": "/pemodelan-simulasi-antrian/static/js/runtime~main.7ba04269.js.map",
-    "static/js/2.9324fdd6.chunk.js": "/pemodelan-simulasi-antrian/static/js/2.9324fdd6.chunk.js",
-    "static/js/2.9324fdd6.chunk.js.map": "/pemodelan-simulasi-antrian/static/js/2.9324fdd6.chunk.js.map",
+    "static/css/2.5c17b9f1.chunk.css": "/pemodelan-simulasi-antrian/static/css/2.5c17b9f1.chunk.css",
+    "static/js/2.ef6ad2fc.chunk.js": "/pemodelan-simulasi-antrian/static/js/2.ef6ad2fc.chunk.js",
+    "static/js/2.ef6ad2fc.chunk.js.map": "/pemodelan-simulasi-antrian/static/js/2.ef6ad2fc.chunk.js.map",
     "index.html": "/pemodelan-simulasi-antrian/index.html",
-    "precache-manifest.774e871c97f629933e49271e12023846.js": "/pemodelan-simulasi-antrian/precache-manifest.774e871c97f629933e49271e12023846.js",
+    "precache-manifest.036dd43a4e6744f3841cb16286eec26a.js": "/pemodelan-simulasi-antrian/precache-manifest.036dd43a4e6744f3841cb16286eec26a.js",
     "service-worker.js": "/pemodelan-simulasi-antrian/service-worker.js",
-    "static/css/main.77141b34.chunk.css.map": "/pemodelan-simulasi-antrian/static/css/main.77141b34.chunk.css.map"
+    "static/css/2.5c17b9f1.chunk.css.map": "/pemodelan-simulasi-antrian/static/css/2.5c17b9f1.chunk.css.map",
+    "static/css/main.627fbecc.chunk.css.map": "/pemodelan-simulasi-antrian/static/css/main.627fbecc.chunk.css.map"
   }
 }
