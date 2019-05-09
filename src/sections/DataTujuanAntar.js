@@ -33,7 +33,7 @@ class DataTujuanAntar extends Component {
       let list = Array.from(this.state.bilAcak);
       this.state.bilAcak.push(bil2.toFixed(0));
       this.setState({ list });
-      localStorage.setItem('C' + i.toString(), bil2.toFixed(0));
+      localStorage.setItem("C" + (i + 1).toString(), bil2.toFixed(0));
     }
   };
 
