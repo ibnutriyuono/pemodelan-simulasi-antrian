@@ -17,14 +17,14 @@ export default class DataAntarKedatanganPetugas extends Component {
   }
 
   componentDidMount() {
-    this.perhitunganZi(6102, 6110, 1011, 6132);
-    this.perhitunganZi1(6102, 6110, this.state.z01, 6132);
-    this.perhitunganUi(this.state.zi, 6132);
-    this.perhitunganUi1(this.state.zi1, 6132);
+    this.perhitunganZi(6110, 6132, 1011, 6102);
+    this.perhitunganZi1(6110, 6132, this.state.z01, 6102);
+    this.perhitunganUi(this.state.zi, 6102);
+    this.perhitunganUi1(this.state.zi1, 6102);
     this.perhitunganln(this.state.Ui);
     this.perhitunganSin(this.state.Ui1);
     this.perhitunganZ(this.state.ln, this.state.sin);
-    this.perhitunganX(this.state.Z, 8.3, 4.075);
+    this.perhitunganX(this.state.Z, 21.7, 14.254);
   }
 
   perhitunganZi = (a, c, Z0, m) => {
@@ -39,28 +39,27 @@ export default class DataAntarKedatanganPetugas extends Component {
     this.setState({ listz01 });
   };
 
-  perhitunganZi1 = (a, c, Z0, m) => {
+  perhitunganZi1 = (a, c, Z01, m) => {
     for (let i = 0; i < 26; i++) {
-      Z0 = (a * Z0 + c) % m;
+      Z01 = (a * Z01 + c) % m;
       let listz01 = Array.from(this.state.zi1);
-      this.state.zi1.push(Z0);
+      this.state.zi1.push(Z01);
       this.setState({ listz01 });
     }
   };
 
-  perhitunganUi = (zi, m) => {
+  perhitunganUi = (Zi, m) => {
     for (let i = 0; i < 26; i++) {
-      let u = zi[i] / m;
+      let u = Zi[i] / m;
       let list = Array.from(this.state.Ui);
       this.state.Ui.push(u.toFixed(3));
       this.setState({ list });
-      localStorage.setItem("A" + i.toString(), u.toFixed(3));
     }
   };
 
-  perhitunganUi1 = (zi, m) => {
+  perhitunganUi1 = (zi1, m) => {
     for (let i = 0; i < 26; i++) {
-      let u = zi[i] / m;
+      let u = zi1[i] / m;
       let list = Array.from(this.state.Ui1);
       this.state.Ui1.push(u.toFixed(3));
       this.setState({ list });
@@ -73,12 +72,13 @@ export default class DataAntarKedatanganPetugas extends Component {
       let list = Array.from(this.state.ln);
       this.state.ln.push(hasil.toFixed(3));
       this.setState({ list });
+      localStorage.setItem("B" + i.toString(), hasil.toFixed(3));
     }
   };
 
-  perhitunganSin = Ui => {
+  perhitunganSin = Ui1 => {
     for (let i = 0; i < 26; i++) {
-      let hasil = Math.sin(2 * Math.PI * Ui[i]);
+      let hasil = Math.sin(2 * Math.PI * Ui1[i]);
       let list = Array.from(this.state.sin);
       this.state.sin.push(hasil.toFixed(3));
       this.setState({ list });
@@ -100,7 +100,7 @@ export default class DataAntarKedatanganPetugas extends Component {
       let list = Array.from(this.state.X);
       this.state.X.push(hasil.toFixed(0));
       this.setState({ list });
-      localStorage.setItem("D" + i.toString(), hasil.toFixed(0));
+      localStorage.setItem("F" + i.toString(), hasil.toFixed(0));
     }
   };
 
@@ -111,16 +111,16 @@ export default class DataAntarKedatanganPetugas extends Component {
       <div>
         <div className="tablecontainer">
           <h6 align="left">
-            <b>>> Tabel Variabel antar Kedatangan pelanggan</b>
+            <b>>> Tabel Variabel Lama Pencucian</b>
           </h6>
           <p>
             Menggunakan deret bilangan acak yang dibangkitkan dengan metode
             Linear Congruential Generator dengan asumsi:
           </p>
           <ul>
-            <li>Konstanta Pengali : 6102</li>
-            <li>Konstanta Increment : 6110</li>
-            <li>Konstanta Modulus : 6132</li>
+            <li>Konstanta Pengali : 6110</li>
+            <li>Konstanta Increment : 6132</li>
+            <li>Konstanta Modulus : 6102</li>
             <li>Nilai Awal : 1011</li>
           </ul>
           <p>
