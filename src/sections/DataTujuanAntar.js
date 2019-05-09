@@ -41,34 +41,34 @@ class DataTujuanAntar extends Component {
     let jalan = '';
     let durasi = 0;
     for (let i = 0; i < 25; i++) {
-      if (bilAcak[i] === 1) {
+      if (bilAcak[i] == 1) {
         jalan = 'Jl. Nursijan';
         durasi = 10;
-      } else if (bilAcak[i] === 2) {
+      } else if (bilAcak[i] == 2) {
         jalan = 'Jl. Bapa Supi';
         durasi = 10;
-      } else if (bilAcak[i] === 3) {
+      } else if (bilAcak[i] == 3) {
         jalan = 'Jl. Wangsareja';
         durasi = 5;
-      } else if (bilAcak[i] === 4) {
+      } else if (bilAcak[i] == 4) {
         jalan = 'Jl. Paledang';
         durasi = 5;
-      } else if (bilAcak[i] === 5) {
+      } else if (bilAcak[i] == 5) {
         jalan = 'Jl. Lengkong Besar';
         durasi = 15;
-      } else if (bilAcak[i] === 6) {
+      } else if (bilAcak[i] == 6) {
         jalan = 'Jl. Lengkong Kecil';
         durasi = 10;
-      } else if (bilAcak[i] === 7) {
+      } else if (bilAcak[i] == 7) {
         jalan = 'Jl. Cikawao';
         durasi = 10;
-      } else if (bilAcak[i] === 8) {
+      } else if (bilAcak[i] == 8) {
         jalan = 'Jl. Karapitan';
         durasi = 10;
-      } else if (bilAcak[i] === 9) {
+      } else if (bilAcak[i] == 9) {
         jalan = 'Jl. Emong';
         durasi = 10;
-      } else if (bilAcak[i] === 10) {
+      } else if (bilAcak[i] == 10) {
         jalan = 'Jl. Jati';
         durasi = 10;
       }
