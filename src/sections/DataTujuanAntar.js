@@ -1,4 +1,4 @@
-import React, { Component } from "react";
+import React, { Component } from 'react';
 
 class DataTujuanAntar extends Component {
   constructor(props) {
@@ -33,53 +33,53 @@ class DataTujuanAntar extends Component {
       let list = Array.from(this.state.bilAcak);
       this.state.bilAcak.push(bil2.toFixed(0));
       this.setState({ list });
-      localStorage.setItem("C" + i.toString(), bil2.toFixed(0));
+      localStorage.setItem('C' + i.toString(), bil2.toFixed(0));
     }
   };
 
   penentuanJalan = bilAcak => {
-    let jalan = "";
+    let jalan = '';
     let durasi = 0;
     for (let i = 0; i < 25; i++) {
-      if (bilAcak[i] == 1) {
-        jalan = "Jl. Nursijan";
+      if (bilAcak[i] === 1) {
+        jalan = 'Jl. Nursijan';
         durasi = 10;
-      } else if (bilAcak[i] == 2) {
-        jalan = "Jl. Bapa Supi";
+      } else if (bilAcak[i] === 2) {
+        jalan = 'Jl. Bapa Supi';
         durasi = 10;
-      } else if (bilAcak[i] == 3) {
-        jalan = "Jl. Wangsareja";
+      } else if (bilAcak[i] === 3) {
+        jalan = 'Jl. Wangsareja';
         durasi = 5;
-      } else if (bilAcak[i] == 4) {
-        jalan = "Jl. Paledang";
+      } else if (bilAcak[i] === 4) {
+        jalan = 'Jl. Paledang';
         durasi = 5;
-      } else if (bilAcak[i] == 5) {
-        jalan = "Jl. Lengkong Besar";
+      } else if (bilAcak[i] === 5) {
+        jalan = 'Jl. Lengkong Besar';
         durasi = 15;
-      } else if (bilAcak[i] == 6) {
-        jalan = "Jl. Lengkong Kecil";
+      } else if (bilAcak[i] === 6) {
+        jalan = 'Jl. Lengkong Kecil';
         durasi = 10;
-      } else if (bilAcak[i] == 7) {
-        jalan = "Jl. Cikawao";
+      } else if (bilAcak[i] === 7) {
+        jalan = 'Jl. Cikawao';
         durasi = 10;
-      } else if (bilAcak[i] == 8) {
-        jalan = "Jl. Karapitan";
+      } else if (bilAcak[i] === 8) {
+        jalan = 'Jl. Karapitan';
         durasi = 10;
-      } else if (bilAcak[i] == 9) {
-        jalan = "Jl. Emong";
+      } else if (bilAcak[i] === 9) {
+        jalan = 'Jl. Emong';
         durasi = 10;
-      } else if (bilAcak[i] == 10) {
-        jalan = "Jl. Jati";
+      } else if (bilAcak[i] === 10) {
+        jalan = 'Jl. Jati';
         durasi = 10;
       }
       let list = Array.from(this.state.jalan);
       this.state.jalan.push(jalan);
       this.setState({ list });
-      localStorage.setItem("I" + (i + 1).toString(), JSON.stringify(jalan));
+      localStorage.setItem('I' + (i + 1).toString(), JSON.stringify(jalan));
       let list2 = Array.from(this.state.waktu);
       this.state.waktu.push(durasi);
       this.setState({ list2 });
-      localStorage.setItem("J" + (i + 1).toString(), durasi);
+      localStorage.setItem('J' + (i + 1).toString(), durasi);
     }
   };
 
@@ -95,10 +95,7 @@ class DataTujuanAntar extends Component {
         <h6 align="left">
           <b>>> Tabel Variabel Tujuan Antar</b>
         </h6>
-        <p>
-          Menggunakan deret bilangan acak yang dibangkitkan dengan metode
-          Multiplicative Generator dengan asumsi:
-        </p>
+        <p>Menggunakan deret bilangan acak yang dibangkitkan dengan metode Multiplicative Generator dengan asumsi:</p>
         <ul>
           <li>Konstanta Pengali : 6132</li>
           <li>Konstanta Modulus : 6102</li>
