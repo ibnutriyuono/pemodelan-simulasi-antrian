@@ -21,7 +21,6 @@ export default class App extends Component {
         <DataSimulasi />
         <DataHasil />
         <GrafikPengamatan />
-        <LaporanPDF />
         <Footer />
       </div>
     );
