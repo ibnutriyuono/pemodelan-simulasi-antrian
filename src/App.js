@@ -9,7 +9,6 @@ import DataPengamatan from './sections/DataPengamatan';
 import GrafikPengamatan from './sections/GrafikPengamatan';
 import DataHasil from './sections/DataHasil';
 import DataSimulasi from './sections/DataSimulasi';
-import LaporanPDF from './sections/LaporanPDF';
 
 export default class App extends Component {
   render() {

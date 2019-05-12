@@ -55,19 +55,6 @@ export default class Navbar extends Component {
                   Grafik Simulasi
                 </Link>
               </li>
-              <li>
-                <Link
-                  activeClass="active"
-                  to="section4"
-                  spy={true}
-                  smooth={true}
-                  offset={-70}
-                  duration={500}
-                  delay={100}
-                >
-                  Laporan
-                </Link>
-              </li>
             </ul>
             <ul id="nav-mobile" className="sidenav">
               <li>
